@@ -42,51 +42,68 @@
     <div class="nav__inner">
       <a href="#top" class="nav__logo" aria-label="3TIGRES — inicio">3<span>TIGRES</span></a>
 
-      <nav class="nav__links" id="navLinks" aria-label="Navegación principal">
+      <div class="nav__right">
+        <a href="https://booksy.com" target="_blank" rel="noopener" class="btn btn--nav" data-i18n="nav.book">RESERVAR EN BOOKSY</a>
+        <button class="nav__burger" id="menuToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="menuOverlay">
+          <span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ══════════ MENÚ FULLSCREEN ══════════ -->
+  <div class="menu" id="menuOverlay" role="dialog" aria-modal="true" aria-label="Menú" hidden>
+    <div class="menu__panel">
+      <button class="menu__close" id="menuClose" aria-label="Cerrar menú">✕</button>
+
+      <nav class="menu__links" aria-label="Navegación principal">
         <a href="#nosotros" data-i18n="nav.about">NOSOTROS</a>
         <a href="#servicios" data-i18n="nav.services">SERVICIOS</a>
         <a href="#galeria" data-i18n="nav.gallery">GALERÍA</a>
         <a href="#equipo" data-i18n="nav.team">EQUIPO</a>
         <a href="#ubicacion" data-i18n="nav.location">UBICACIÓN</a>
-        <a href="https://booksy.com" target="_blank" rel="noopener" class="btn btn--nav" data-i18n="nav.book">RESERVAR EN BOOKSY</a>
+      </nav>
+
+      <div class="menu__footer">
+        <a href="https://booksy.com" target="_blank" rel="noopener" class="btn btn--primary" data-i18n="nav.book">RESERVAR EN BOOKSY</a>
         <div class="lang" role="group" aria-label="Idioma">
           <button class="lang__btn is-active" data-lang="es" aria-pressed="true">ES</button>
           <button class="lang__btn" data-lang="ca" aria-pressed="false">CA</button>
           <button class="lang__btn" data-lang="en" aria-pressed="false">EN</button>
         </div>
-      </nav>
-
-      <button class="nav__burger" id="navBurger" aria-label="Abrir menú" aria-expanded="false" aria-controls="navLinks">
-        <span></span><span></span><span></span>
-      </button>
+      </div>
     </div>
-  </header>
+  </div>
 
   <main>
 
     <!-- ══════════ HERO ══════════ -->
     <section class="hero">
-      <svg class="doodle doodle--star hero__star1" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0l2.9 8.2L24 9l-7 5.4L19.4 24 12 18.8 4.6 24 7 14.4 0 9l9.1-.8z"/></svg>
-      <svg class="doodle doodle--star hero__star2" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0l2.9 8.2L24 9l-7 5.4L19.4 24 12 18.8 4.6 24 7 14.4 0 9l9.1-.8z"/></svg>
-      <svg class="doodle doodle--star hero__star3" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0l2.9 8.2L24 9l-7 5.4L19.4 24 12 18.8 4.6 24 7 14.4 0 9l9.1-.8z"/></svg>
-
-      <p class="eyebrow reveal" data-i18n="hero.eyebrow">BARCELONA · L'EIXAMPLE</p>
-      <h1 class="hero__title reveal">3TIGRES<br>BARBERSHOP</h1>
-      <p class="hero__sub reveal" data-i18n="hero.sub">Tres tigres, una navaja, y el mejor corte del barrio.</p>
-      <div class="hero__ctas reveal">
+      <p class="eyebrow intro intro--1" data-i18n="hero.eyebrow">BARCELONA · L'EIXAMPLE</p>
+      <h1 class="hero__title">
+        <span class="intro intro--2">3TIGRES</span>
+        <span class="intro intro--3">BARBERSHOP</span>
+      </h1>
+      <p class="hero__sub intro intro--4" data-i18n="hero.sub">Tres tigres, una navaja, y el mejor corte del barrio.</p>
+      <div class="hero__ctas intro intro--5">
         <a href="https://booksy.com" target="_blank" rel="noopener" class="btn btn--primary" data-i18n="hero.cta1">RESERVAR CITA</a>
         <a href="#servicios" class="btn btn--ghost" data-i18n="hero.cta2">VER SERVICIOS</a>
       </div>
     </section>
 
-    <!-- ══════════ STATS ══════════ -->
-    <div class="stats" aria-label="Cifras de 3TIGRES">
-      <div class="stats__item"><strong>+9K</strong><span data-i18n="stats.followers">SEGUIDORES</span></div>
-      <div class="stats__item"><strong>4.8 ★</strong><span data-i18n="stats.booksy">EN BOOKSY</span></div>
-      <div class="stats__item"><strong>+1</strong><span data-i18n="stats.years">AÑO ABIERTOS</span></div>
+    <!-- ══════════ MARQUEE ══════════ -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>3TIGRES · BARBERSHOP · BARCELONA · FADE · BARBA · ESTILO · </span><span>3TIGRES · BARBERSHOP · BARCELONA · FADE · BARBA · ESTILO · </span>
+      </div>
     </div>
 
-    <div class="divider divider--zigzag" aria-hidden="true"></div>
+    <!-- ══════════ STATS ══════════ -->
+    <div class="stats" aria-label="Cifras de 3TIGRES">
+      <div class="stats__item reveal"><strong>+9K</strong><span data-i18n="stats.followers">SEGUIDORES</span></div>
+      <div class="stats__item reveal"><strong>4.8 ★</strong><span data-i18n="stats.booksy">EN BOOKSY</span></div>
+      <div class="stats__item reveal"><strong>+1</strong><span data-i18n="stats.years">AÑO ABIERTOS</span></div>
+    </div>
 
     <!-- ══════════ NOSOTROS ══════════ -->
     <section class="section section--pink halftone" id="nosotros">
@@ -101,24 +118,22 @@
         <figure class="about-art reveal" aria-hidden="true">
           <div class="about-art__panel">
             <span class="about-art__label" data-i18n="about.before">ANTES DE 3TIGRES</span>
-            <svg viewBox="0 0 100 100" class="about-art__tiger"><circle cx="50" cy="48" r="26"/><path d="M30 32 L24 18 L38 26z M70 32 L76 18 L62 26z"/><path d="M30 20 Q50 -8 70 20 M22 48 Q10 60 24 74 M78 48 Q90 60 76 74" fill="none"/><circle cx="41" cy="44" r="3" class="dot"/><circle cx="59" cy="44" r="3" class="dot"/><path d="M42 60 Q50 66 58 60" fill="none"/></svg>
+            <svg viewBox="0 0 100 100" class="about-art__tiger"><circle cx="50" cy="48" r="26"/><path d="M30 32 L24 18 L38 26z M70 32 L76 18 L62 26z"/><circle cx="41" cy="44" r="3" class="dot"/><circle cx="59" cy="44" r="3" class="dot"/><path d="M42 60 Q50 66 58 60" fill="none"/></svg>
           </div>
           <div class="about-art__panel about-art__panel--after">
             <span class="about-art__label" data-i18n="about.after">DESPUÉS DE 3TIGRES</span>
-            <svg viewBox="0 0 100 100" class="about-art__tiger"><circle cx="50" cy="50" r="24"/><path d="M32 34 L26 22 L38 28z M68 34 L74 22 L62 28z"/><path d="M34 30 Q50 20 66 30" fill="none"/><circle cx="42" cy="46" r="3" class="dot"/><circle cx="58" cy="46" r="3" class="dot"/><path d="M42 60 Q50 68 58 60" fill="none"/><path d="M20 14 l3 6 M80 14 l-3 6" fill="none"/></svg>
+            <svg viewBox="0 0 100 100" class="about-art__tiger"><circle cx="50" cy="50" r="24"/><path d="M32 34 L26 22 L38 28z M68 34 L74 22 L62 28z"/><circle cx="42" cy="46" r="3" class="dot"/><circle cx="58" cy="46" r="3" class="dot"/><path d="M42 60 Q50 68 58 60" fill="none"/></svg>
           </div>
         </figure>
       </div>
     </section>
-
-    <div class="divider divider--torn" aria-hidden="true"></div>
 
     <!-- ══════════ SERVICIOS ══════════ -->
     <section class="section" id="servicios">
       <p class="eyebrow eyebrow--center reveal" data-i18n="services.eyebrow">LO QUE HACEMOS</p>
       <h2 class="h2 h2--center reveal" data-i18n="services.title">NUESTROS SERVICIOS</h2>
 
-      <div class="services">
+      <div class="services stagger">
         <article class="service reveal">
           <div class="service__top">
             <h3 data-i18n="services.s1.name">CORTE DE PELO</h3>
@@ -180,34 +195,30 @@
       </p>
     </section>
 
-    <div class="divider divider--zigzag divider--red" aria-hidden="true"></div>
-
     <!-- ══════════ GALERÍA ══════════ -->
-    <section class="section section--red" id="galeria">
-      <p class="eyebrow eyebrow--center eyebrow--onred reveal" data-i18n="gallery.eyebrow">NUESTRO TRABAJO</p>
-      <h2 class="h2 h2--center h2--onred reveal" data-i18n="gallery.title">GALERÍA</h2>
+    <section class="section section--dark" id="galeria">
+      <p class="eyebrow eyebrow--center eyebrow--ondark reveal" data-i18n="gallery.eyebrow">NUESTRO TRABAJO</p>
+      <h2 class="h2 h2--center h2--ondark reveal" data-i18n="gallery.title">GALERÍA</h2>
 
       <div class="gallery reveal" id="gallery">
-        <!-- Sustituir los <div class="ph"> por <img loading="lazy" alt="..."> reales (WebP) -->
-        <button class="gallery__item ph ph--1" data-full="1" aria-label="Ampliar foto 1"></button>
-        <button class="gallery__item ph ph--2" data-full="2" aria-label="Ampliar foto 2"></button>
-        <button class="gallery__item ph ph--3" data-full="3" aria-label="Ampliar foto 3"></button>
-        <button class="gallery__item ph ph--4" data-full="4" aria-label="Ampliar foto 4"></button>
-        <button class="gallery__item ph ph--5" data-full="5" aria-label="Ampliar foto 5"></button>
-        <button class="gallery__item ph ph--6" data-full="6" aria-label="Ampliar foto 6"></button>
-        <button class="gallery__item ph ph--7" data-full="7" aria-label="Ampliar foto 7"></button>
-        <button class="gallery__item ph ph--8" data-full="8" aria-label="Ampliar foto 8"></button>
+        <!-- Sustituir los <button class="ph"> por <img loading="lazy" alt="..."> reales (WebP) -->
+        <button class="gallery__item ph ph--1" aria-label="Ampliar foto 1"></button>
+        <button class="gallery__item ph ph--2" aria-label="Ampliar foto 2"></button>
+        <button class="gallery__item ph ph--3" aria-label="Ampliar foto 3"></button>
+        <button class="gallery__item ph ph--4" aria-label="Ampliar foto 4"></button>
+        <button class="gallery__item ph ph--5" aria-label="Ampliar foto 5"></button>
+        <button class="gallery__item ph ph--6" aria-label="Ampliar foto 6"></button>
+        <button class="gallery__item ph ph--7" aria-label="Ampliar foto 7"></button>
+        <button class="gallery__item ph ph--8" aria-label="Ampliar foto 8"></button>
       </div>
     </section>
-
-    <div class="divider divider--torn divider--flip" aria-hidden="true"></div>
 
     <!-- ══════════ EQUIPO ══════════ -->
     <section class="section" id="equipo">
       <p class="eyebrow eyebrow--center reveal" data-i18n="team.eyebrow">EL EQUIPO</p>
       <h2 class="h2 h2--center reveal" data-i18n="team.title">LOS TIGRES</h2>
 
-      <div class="team">
+      <div class="team stagger">
         <article class="barber reveal">
           <span class="barber__num" aria-hidden="true">01</span>
           <div class="barber__avatar" aria-hidden="true"><svg viewBox="0 0 100 100"><circle cx="50" cy="50" r="30"/><path d="M28 34 L22 20 L36 26z M72 34 L78 20 L64 26z"/><circle cx="41" cy="46" r="3.5" class="dot"/><circle cx="59" cy="46" r="3.5" class="dot"/><path d="M40 62 Q50 70 60 62" fill="none"/></svg></div>
@@ -237,14 +248,12 @@
       </div>
     </section>
 
-    <div class="divider divider--zigzag" aria-hidden="true"></div>
-
     <!-- ══════════ RESEÑAS ══════════ -->
     <section class="section section--pink halftone" id="clientes">
       <p class="eyebrow eyebrow--center reveal" data-i18n="reviews.eyebrow">LO QUE DICEN</p>
       <h2 class="h2 h2--center reveal" data-i18n="reviews.title">CLIENTES</h2>
 
-      <div class="reviews">
+      <div class="reviews stagger">
         <blockquote class="review reveal">
           <span class="review__stars" aria-label="5 estrellas">★★★★★</span>
           <p data-i18n="reviews.r1">"El mejor barbershop de Barcelona sin duda. Moises es un crack, siempre quedo perfecto."</p>
@@ -263,8 +272,6 @@
       </div>
     </section>
 
-    <div class="divider divider--torn" aria-hidden="true"></div>
-
     <!-- ══════════ BOOKSY / RESERVA ══════════ -->
     <section class="section booking" id="reserva">
       <span class="booking__watermark" aria-hidden="true">BOOK</span>
@@ -275,12 +282,10 @@
       <p class="booking__micro reveal"><span data-i18n="booking.micro">También por WhatsApp:</span> <a href="https://wa.me/34667847396">+34 667 847 396</a></p>
     </section>
 
-    <div class="divider divider--zigzag divider--red" aria-hidden="true"></div>
-
     <!-- ══════════ UBICACIÓN ══════════ -->
-    <section class="section section--red" id="ubicacion">
-      <p class="eyebrow eyebrow--center eyebrow--onred reveal" data-i18n="loc.eyebrow">DÓNDE ESTAMOS</p>
-      <h2 class="h2 h2--center h2--onred reveal" data-i18n="loc.title">UBICACIÓN</h2>
+    <section class="section section--dark" id="ubicacion">
+      <p class="eyebrow eyebrow--center eyebrow--ondark reveal" data-i18n="loc.eyebrow">DÓNDE ESTAMOS</p>
+      <h2 class="h2 h2--center h2--ondark reveal" data-i18n="loc.title">UBICACIÓN</h2>
 
       <div class="loc">
         <div class="loc__info reveal">
@@ -301,7 +306,7 @@
             </tbody>
           </table>
 
-          <a href="https://maps.google.com/?q=Carrer+de+Valencia+226,+08007+Barcelona" target="_blank" rel="noopener" class="btn btn--ghost btn--onred" data-i18n="loc.maps">ABRIR EN MAPS ↗</a>
+          <a href="https://maps.google.com/?q=Carrer+de+Valencia+226,+08007+Barcelona" target="_blank" rel="noopener" class="btn btn--primary" data-i18n="loc.maps">ABRIR EN MAPS ↗</a>
         </div>
 
         <div class="loc__map reveal">
