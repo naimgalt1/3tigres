@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3TIGRES BARBERSHOP · Barbería en L'Eixample, Barcelona</title>
+  <meta name="description" content="Tres tigres, una navaja, y el mejor corte del barrio. Barbería en Carrer de València 226, Barcelona. Fades, barba ritual, cortes a medida. Reserva en Booksy.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Shrikhand&family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BarberShop",
+    "name": "3TIGRES BARBERIA",
+    "image": "https://3tigresbarberia.com/og.jpg",
+    "url": "https://3tigresbarberia.com",
+    "telephone": "+34667847396",
+    "priceRange": "€13 - €60",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Carrer de València 226",
+      "addressLocality": "Barcelona",
+      "postalCode": "08007",
+      "addressRegion": "Barcelona",
+      "addressCountry": "ES"
+    },
+    "geo": { "@type": "GeoCoordinates", "latitude": 41.3907, "longitude": 2.1596 },
+    "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.8", "reviewCount": "250" },
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"], "opens": "10:00", "closes": "21:00" }
+    ],
+    "sameAs": ["https://www.instagram.com/3tigresbarberia"]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- ══════════ NAV ══════════ -->
+  <header class="nav" id="top">
+    <div class="nav__inner">
+      <a href="#top" class="nav__logo" aria-label="3TIGRES — inicio">3<span>TIGRES</span></a>
+
+      <nav class="nav__links" id="navLinks" aria-label="Navegación principal">
+        <a href="#nosotros" data-i18n="nav.about">NOSOTROS</a>
+        <a href="#servicios" data-i18n="nav.services">SERVICIOS</a>
+        <a href="#galeria" data-i18n="nav.gallery">GALERÍA</a>
+        <a href="#equipo" data-i18n="nav.team">EQUIPO</a>
+        <a href="#ubicacion" data-i18n="nav.location">UBICACIÓN</a>
+        <a href="https://booksy.com" target="_blank" rel="noopener" class="btn btn--nav" data-i18n="nav.book">RESERVAR EN BOOKSY</a>
+        <div class="lang" role="group" aria-label="Idioma">
+          <button class="lang__btn is-active" data-lang="es" aria-pressed="true">ES</button>
+          <button class="lang__btn" data-lang="ca" aria-pressed="false">CA</button>
+          <button class="lang__btn" data-lang="en" aria-pressed="false">EN</button>
+        </div>
+      </nav>
+
+      <button class="nav__burger" id="navBurger" aria-label="Abrir menú" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ══════════ HERO ══════════ -->
+    <section class="hero">
+      <svg class="doodle doodle--star hero__star1" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0l2.9 8.2L24 9l-7 5.4L19.4 24 12 18.8 4.6 24 7 14.4 0 9l9.1-.8z"/></svg>
+      <svg class="doodle doodle--star hero__star2" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0l2.9 8.2L24 9l-7 5.4L19.4 24 12 18.8 4.6 24 7 14.4 0 9l9.1-.8z"/></svg>
+      <svg class="doodle doodle--star hero__star3" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0l2.9 8.2L24 9l-7 5.4L19.4 24 12 18.8 4.6 24 7 14.4 0 9l9.1-.8z"/></svg>
+
+      <p class="eyebrow reveal" data-i18n="hero.eyebrow">BARCELONA · L'EIXAMPLE</p>
+      <h1 class="hero__title reveal">3TIGRES<br>BARBERSHOP</h1>
+      <p class="hero__sub reveal" data-i18n="hero.sub">Tres tigres, una navaja, y el mejor corte del barrio.</p>
+      <div class="hero__ctas reveal">
+        <a href="https://booksy.com" target="_blank" rel="noopener" class="btn btn--primary" data-i18n="hero.cta1">RESERVAR CITA</a>
+        <a href="#servicios" class="btn btn--ghost" data-i18n="hero.cta2">VER SERVICIOS</a>
+      </div>
+    </section>
+
+    <!-- ══════════ STATS ══════════ -->
+    <div class="stats" aria-label="Cifras de 3TIGRES">
+      <div class="stats__item"><strong>+9K</strong><span data-i18n="stats.followers">SEGUIDORES</span></div>
+      <div class="stats__item"><strong>4.8 ★</strong><span data-i18n="stats.booksy">EN BOOKSY</span></div>
+      <div class="stats__item"><strong>+1</strong><span data-i18n="stats.years">AÑO ABIERTOS</span></div>
+    </div>
+
+    <div class="divider divider--zigzag" aria-hidden="true"></div>
+
+    <!-- ══════════ NOSOTROS ══════════ -->
+    <section class="section section--pink halftone" id="nosotros">
+      <div class="section__grid">
+        <div>
+          <p class="eyebrow reveal" data-i18n="about.eyebrow">NUESTRA HISTORIA</p>
+          <h2 class="h2 reveal">BARBERSHOP</h2>
+          <p class="tagline reveal" data-i18n="about.tagline">CULTURA · ESTILO · PRECISIÓN</p>
+          <p class="body reveal" data-i18n="about.p1">Tres tigres, una navaja, y el mejor corte del barrio. Cultura urbana y precisión artesanal en pleno corazón de Barcelona.</p>
+          <p class="body reveal" data-i18n="about.p2">Más de un año construyendo comunidad — artistas, deportistas y vecinos del barrio que confían en nosotros para su imagen.</p>
+        </div>
+        <figure class="about-art reveal" aria-hidden="true">
+          <div class="about-art__panel">
+            <span class="about-art__label" data-i18n="about.before">ANTES DE 3TIGRES</span>
+            <svg viewBox="0 0 100 100" class="about-art__tiger"><circle cx="50" cy="48" r="26"/><path d="M30 32 L24 18 L38 26z M70 32 L76 18 L62 26z"/><path d="M30 20 Q50 -8 70 20 M22 48 Q10 60 24 74 M78 48 Q90 60 76 74" fill="none"/><circle cx="41" cy="44" r="3" class="dot"/><circle cx="59" cy="44" r="3" class="dot"/><path d="M42 60 Q50 66 58 60" fill="none"/></svg>
+          </div>
+          <div class="about-art__panel about-art__panel--after">
+            <span class="about-art__label" data-i18n="about.after">DESPUÉS DE 3TIGRES</span>
+            <svg viewBox="0 0 100 100" class="about-art__tiger"><circle cx="50" cy="50" r="24"/><path d="M32 34 L26 22 L38 28z M68 34 L74 22 L62 28z"/><path d="M34 30 Q50 20 66 30" fill="none"/><circle cx="42" cy="46" r="3" class="dot"/><circle cx="58" cy="46" r="3" class="dot"/><path d="M42 60 Q50 68 58 60" fill="none"/><path d="M20 14 l3 6 M80 14 l-3 6" fill="none"/></svg>
+          </div>
+        </figure>
+      </div>
+    </section>
+
+    <div class="divider divider--torn" aria-hidden="true"></div>
+
+    <!-- ══════════ SERVICIOS ══════════ -->
+    <section class="section" id="servicios">
+      <p class="eyebrow eyebrow--center reveal" data-i18n="services.eyebrow">LO QUE HACEMOS</p>
+      <h2 class="h2 h2--center reveal" data-i18n="services.title">NUESTROS SERVICIOS</h2>
+
+      <div class="services">
+        <article class="service reveal">
+          <div class="service__top">
+            <h3 data-i18n="services.s1.name">CORTE DE PELO</h3>
+            <span class="service__price">€20</span>
+          </div>
+          <p class="service__meta">25 MIN</p>
+          <p class="service__desc" data-i18n="services.s1.desc">Fade, clásico, texturizado. Cada corte a medida con acabado perfecto.</p>
+        </article>
+
+        <article class="service reveal">
+          <div class="service__top">
+            <h3 data-i18n="services.s2.name">CORTE EXPRÉS</h3>
+            <span class="service__price">€13</span>
+          </div>
+          <p class="service__meta">15 MIN</p>
+          <p class="service__desc" data-i18n="services.s2.desc">Rapados a nivel 1.</p>
+        </article>
+
+        <article class="service reveal">
+          <div class="service__top">
+            <h3 data-i18n="services.s3.name">BARBA RITUAL</h3>
+            <span class="service__price">€14</span>
+          </div>
+          <p class="service__meta">30 MIN</p>
+          <p class="service__desc" data-i18n="services.s3.desc">Perfilado, degradado y afeitado clásico con cuchilla.</p>
+        </article>
+
+        <article class="service reveal">
+          <div class="service__top">
+            <h3 data-i18n="services.s4.name">CORTE + BARBA</h3>
+            <span class="service__price">€30</span>
+          </div>
+          <p class="service__meta">1H</p>
+          <p class="service__desc" data-i18n="services.s4.desc">El pack completo en una sola sesión.</p>
+        </article>
+
+        <article class="service service--premium reveal">
+          <span class="service__badge">PREMIUM</span>
+          <div class="service__top">
+            <h3 data-i18n="services.s5.name">EXPERIENCIA 3TIGRES</h3>
+            <span class="service__price">€60</span>
+          </div>
+          <p class="service__meta">1H 15MIN</p>
+          <p class="service__desc" data-i18n="services.s5.desc">Corte, barba, cejas. El servicio definitivo.</p>
+        </article>
+
+        <article class="service reveal">
+          <div class="service__top">
+            <h3 data-i18n="services.s6.name">CORTE INFANTIL</h3>
+            <span class="service__price">€16</span>
+          </div>
+          <p class="service__meta">30 MIN</p>
+          <p class="service__desc" data-i18n="services.s6.desc">Para los pequeños tigres. Con paciencia.</p>
+        </article>
+      </div>
+
+      <p class="section__link reveal">
+        <a href="https://booksy.com" target="_blank" rel="noopener" class="link-arrow" data-i18n="services.all">VER TODOS EN BOOKSY ↗</a>
+      </p>
+    </section>
+
+    <div class="divider divider--zigzag divider--red" aria-hidden="true"></div>
+
+    <!-- ══════════ GALERÍA ══════════ -->
+    <section class="section section--red" id="galeria">
+      <p class="eyebrow eyebrow--center eyebrow--onred reveal" data-i18n="gallery.eyebrow">NUESTRO TRABAJO</p>
+      <h2 class="h2 h2--center h2--onred reveal" data-i18n="gallery.title">GALERÍA</h2>
+
+      <div class="gallery reveal" id="gallery">
+        <!-- Sustituir los <div class="ph"> por <img loading="lazy" alt="..."> reales (WebP) -->
+        <button class="gallery__item ph ph--1" data-full="1" aria-label="Ampliar foto 1"></button>
+        <button class="gallery__item ph ph--2" data-full="2" aria-label="Ampliar foto 2"></button>
+        <button class="gallery__item ph ph--3" data-full="3" aria-label="Ampliar foto 3"></button>
+        <button class="gallery__item ph ph--4" data-full="4" aria-label="Ampliar foto 4"></button>
+        <button class="gallery__item ph ph--5" data-full="5" aria-label="Ampliar foto 5"></button>
+        <button class="gallery__item ph ph--6" data-full="6" aria-label="Ampliar foto 6"></button>
+        <button class="gallery__item ph ph--7" data-full="7" aria-label="Ampliar foto 7"></button>
+        <button class="gallery__item ph ph--8" data-full="8" aria-label="Ampliar foto 8"></button>
+      </div>
+    </section>
+
+    <div class="divider divider--torn divider--flip" aria-hidden="true"></div>
+
+    <!-- ══════════ EQUIPO ══════════ -->
+    <section class="section" id="equipo">
+      <p class="eyebrow eyebrow--center reveal" data-i18n="team.eyebrow">EL EQUIPO</p>
+      <h2 class="h2 h2--center reveal" data-i18n="team.title">LOS TIGRES</h2>
+
+      <div class="team">
+        <article class="barber reveal">
+          <span class="barber__num" aria-hidden="true">01</span>
+          <div class="barber__avatar" aria-hidden="true"><svg viewBox="0 0 100 100"><circle cx="50" cy="50" r="30"/><path d="M28 34 L22 20 L36 26z M72 34 L78 20 L64 26z"/><circle cx="41" cy="46" r="3.5" class="dot"/><circle cx="59" cy="46" r="3.5" class="dot"/><path d="M40 62 Q50 70 60 62" fill="none"/></svg></div>
+          <h3 class="barber__name">MOISES</h3>
+          <p class="barber__role" data-i18n="team.role1">HEAD BARBER</p>
+          <a href="https://www.instagram.com/higuera.barber" target="_blank" rel="noopener" class="barber__ig">@higuera.barber · 19K</a>
+          <a href="https://booksy.com" target="_blank" rel="noopener" class="btn btn--small"><span data-i18n="team.bookwith">RESERVAR CON</span> MOISES</a>
+        </article>
+
+        <article class="barber reveal">
+          <span class="barber__num" aria-hidden="true">02</span>
+          <div class="barber__avatar" aria-hidden="true"><svg viewBox="0 0 100 100"><circle cx="50" cy="50" r="30"/><path d="M28 34 L22 20 L36 26z M72 34 L78 20 L64 26z"/><circle cx="41" cy="46" r="3.5" class="dot"/><circle cx="59" cy="46" r="3.5" class="dot"/><path d="M42 64 Q50 60 58 64" fill="none"/></svg></div>
+          <h3 class="barber__name">ALEJANDRO</h3>
+          <p class="barber__role" data-i18n="team.role2">BARBER</p>
+          <a href="https://www.instagram.com/3tigresbarberia" target="_blank" rel="noopener" class="barber__ig">@3tigresbarberia</a>
+          <a href="https://booksy.com" target="_blank" rel="noopener" class="btn btn--small"><span data-i18n="team.bookwith">RESERVAR CON</span> ALEJANDRO</a>
+        </article>
+
+        <article class="barber reveal">
+          <span class="barber__num" aria-hidden="true">03</span>
+          <div class="barber__avatar" aria-hidden="true"><svg viewBox="0 0 100 100"><circle cx="50" cy="50" r="30"/><path d="M28 34 L22 20 L36 26z M72 34 L78 20 L64 26z"/><circle cx="41" cy="46" r="3.5" class="dot"/><circle cx="59" cy="46" r="3.5" class="dot"/><path d="M40 62 L60 62" fill="none"/></svg></div>
+          <h3 class="barber__name">[NOMBRE]</h3>
+          <p class="barber__role" data-i18n="team.role3">BARBER</p>
+          <a href="https://www.instagram.com/3tigresbarberia" target="_blank" rel="noopener" class="barber__ig">@3tigresbarberia</a>
+          <a href="https://booksy.com" target="_blank" rel="noopener" class="btn btn--small"><span data-i18n="team.bookwith">RESERVAR CON</span> [NOMBRE]</a>
+        </article>
+      </div>
+    </section>
+
+    <div class="divider divider--zigzag" aria-hidden="true"></div>
+
+    <!-- ══════════ RESEÑAS ══════════ -->
+    <section class="section section--pink halftone" id="clientes">
+      <p class="eyebrow eyebrow--center reveal" data-i18n="reviews.eyebrow">LO QUE DICEN</p>
+      <h2 class="h2 h2--center reveal" data-i18n="reviews.title">CLIENTES</h2>
+
+      <div class="reviews">
+        <blockquote class="review reveal">
+          <span class="review__stars" aria-label="5 estrellas">★★★★★</span>
+          <p data-i18n="reviews.r1">"El mejor barbershop de Barcelona sin duda. Moises es un crack, siempre quedo perfecto."</p>
+          <footer><strong data-i18n="reviews.r1a">CLIENTE 3TIGRES</strong> · Booksy</footer>
+        </blockquote>
+        <blockquote class="review reveal">
+          <span class="review__stars" aria-label="5 estrellas">★★★★★</span>
+          <p data-i18n="reviews.r2">"Trato genial. Recomendable 100%. Javier lo hace increíble."</p>
+          <footer><strong>IVAN</strong> · Treatwell</footer>
+        </blockquote>
+        <blockquote class="review reveal">
+          <span class="review__stars" aria-label="5 estrellas">★★★★★</span>
+          <p data-i18n="reviews.r3">"Llevaba meses buscando un buen barbero en Barcelona. Lo encontré. 3TIGRES es diferente."</p>
+          <footer><strong data-i18n="reviews.r1a">CLIENTE 3TIGRES</strong> · Booksy</footer>
+        </blockquote>
+      </div>
+    </section>
+
+    <div class="divider divider--torn" aria-hidden="true"></div>
+
+    <!-- ══════════ BOOKSY / RESERVA ══════════ -->
+    <section class="section booking" id="reserva">
+      <span class="booking__watermark" aria-hidden="true">BOOK</span>
+      <p class="eyebrow eyebrow--center reveal" data-i18n="booking.eyebrow">¿LISTO PARA EL CORTE?</p>
+      <h2 class="hero__title booking__title reveal" data-i18n="booking.title">RESERVA TU CITA HOY</h2>
+      <p class="hero__sub reveal" data-i18n="booking.sub">Elige tu barber, servicio y horario en Booksy. Online, en segundos, sin llamadas.</p>
+      <a href="https://booksy.com" target="_blank" rel="noopener" class="btn btn--primary btn--xxl reveal" data-i18n="booking.cta">RESERVAR EN BOOKSY</a>
+      <p class="booking__micro reveal"><span data-i18n="booking.micro">También por WhatsApp:</span> <a href="https://wa.me/34667847396">+34 667 847 396</a></p>
+    </section>
+
+    <div class="divider divider--zigzag divider--red" aria-hidden="true"></div>
+
+    <!-- ══════════ UBICACIÓN ══════════ -->
+    <section class="section section--red" id="ubicacion">
+      <p class="eyebrow eyebrow--center eyebrow--onred reveal" data-i18n="loc.eyebrow">DÓNDE ESTAMOS</p>
+      <h2 class="h2 h2--center h2--onred reveal" data-i18n="loc.title">UBICACIÓN</h2>
+
+      <div class="loc">
+        <div class="loc__info reveal">
+          <h3 class="loc__name">3TIGRES BARBERIA</h3>
+          <p class="loc__addr">Carrer de València 226<br>08007 Barcelona · L'Eixample</p>
+          <p class="loc__walk" data-i18n="loc.walk">8 min a pie de Passeig de Gràcia</p>
+
+          <h4 class="loc__hours-title" data-i18n="loc.hours">HORARIOS</h4>
+          <table class="hours">
+            <tbody>
+              <tr><th data-i18n="loc.mon">LUN</th><td>10:00 – 21:00</td></tr>
+              <tr><th data-i18n="loc.tue">MAR</th><td>10:00 – 21:00</td></tr>
+              <tr><th data-i18n="loc.wed">MIÉ</th><td>10:00 – 21:00</td></tr>
+              <tr><th data-i18n="loc.thu">JUE</th><td>10:00 – 21:00</td></tr>
+              <tr><th data-i18n="loc.fri">VIE</th><td>10:00 – 21:00</td></tr>
+              <tr><th data-i18n="loc.sat">SÁB</th><td>10:00 – 21:00</td></tr>
+              <tr><th data-i18n="loc.sun">DOM</th><td data-i18n="loc.closed">Cerrado</td></tr>
+            </tbody>
+          </table>
+
+          <a href="https://maps.google.com/?q=Carrer+de+Valencia+226,+08007+Barcelona" target="_blank" rel="noopener" class="btn btn--ghost btn--onred" data-i18n="loc.maps">ABRIR EN MAPS ↗</a>
+        </div>
+
+        <div class="loc__map reveal">
+          <iframe
+            title="Mapa — 3TIGRES Barbería, Carrer de València 226, Barcelona"
+            src="https://www.google.com/maps?q=Carrer+de+Val%C3%A8ncia+226,+08007+Barcelona&output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ══════════ FOOTER ══════════ -->
+  <footer class="footer">
+    <p class="footer__logo">3<span>TIGRES</span></p>
+    <nav class="footer__links" aria-label="Enlaces del pie">
+      <a href="https://www.instagram.com/3tigresbarberia" target="_blank" rel="noopener">INSTAGRAM</a>
+      <a href="https://booksy.com" target="_blank" rel="noopener">BOOKSY</a>
+      <a href="#servicios" data-i18n="nav.services">SERVICIOS</a>
+      <a href="#equipo" data-i18n="nav.team">EQUIPO</a>
+      <a href="#ubicacion" data-i18n="nav.location">UBICACIÓN</a>
+    </nav>
+    <p class="footer__handle">@3tigresbarberia</p>
+    <p class="footer__copy">© 3TIGRES BARBERIA · Barcelona</p>
+  </footer>
+
+  <!-- ══════════ LIGHTBOX ══════════ -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Foto ampliada" hidden>
+    <button class="lightbox__close" id="lightboxClose" aria-label="Cerrar">✕</button>
+    <div class="lightbox__content" id="lightboxContent"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
